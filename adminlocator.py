@@ -132,7 +132,6 @@ def adm(site):
 			for admin in adminpath:
 				admin = admin.replace("\n","")
 				admin = "/"+admin
-				target = site+admin
 				connection = httplib.HTTPConnection(site)
 				connection.request("GET",admin)
 				response = connection.getresponse()
